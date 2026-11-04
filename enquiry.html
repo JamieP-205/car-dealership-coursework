@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <title>Test Drive and Car Enquiry</title>
+   
+</head>    
+<body>
+    <header>
+        <div class="site-title">
+            <a href="home.html">
+                <img src="images/favicon.png" alt="Smith's Dealership logo" class="site-logo">
+            </a>
+            <h1><a href="home.html" class="site-home-link">Smith's Dealership</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="inventory.html">Inventory</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="finance.html">Finance</a></li>
+                <li><a href="trade-in.html">Trade In</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><button type="button" id="accessButton" class="nav-button" aria-expanded="false" aria-controls="accessPanel">Accessibility</button></li>
+            </ul>
+        </nav>
+        <div id="accessPanel">
+            <p>Accessibility Options</p>
+            <button type="button" id="contrastButton">High Contrast Mode</button>
+            <button type="button" id="changeFont">Accessible Font Size</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page intro -->
+        <section class="page-box">
+            <h2>Test Drive and Car Enquiry</h2>
+            <p>Use this form to request a test drive or ask for more information about a specific car.</p>
+            <p class="small-note">This page is for car interest only. For general questions or complaints use the Contact Us page.</p>
+        </section>
+
+        <!-- Main customer form -->
+        <form id="customerForm">
+            <div class="form-grid">
+                <div class="field">
+                  <label for="firstName">First Name <span class="required">*</span></label>
+                  <input type="text" id="firstName" name="firstName" placeholder="e.g. John" required />
+                </div>
+
+                <div class="field">
+                  <label for="lastName">Last Name <span class="required">*</span></label>
+                  <input type="text" id="lastName" name="lastName" placeholder="e.g. doe" required />
+                </div>
+
+                <div class="field">
+                  <label for="email">Email Address <span class="required">*</span></label>
+                  <input type="email" id="email" name="email" placeholder="you@example.com" required />
+                </div>
+
+                <div class="field">
+                  <label for="phone">Phone Number <span class="required">*</span></label>
+                  <input type="tel" id="phone" name="phone" placeholder="+44 7700 900000" required pattern="[0-9+\s]{7,15}"/>
+                </div>
+
+                <div class="field">
+                  <label for="carChoice">Car Interested In</label>
+                  <select id="carChoice" name="carChoice">
+                    <option value="2018 Toyota Camry">2018 Toyota Camry</option>
+                    <option value="2019 Ford Focus">2019 Ford Focus</option>
+                    <option value="2020 Volkswagen Golf">2020 Volkswagen Golf</option>
+                  </select>
+                </div>
+
+                <div class="field">
+                  <label for="reason">Reason for Enquiry</label>
+                  <select id="reason" name="reason">
+                    <option value="test drive">Test Drive</option>
+                    <option value="more information">More Information</option>
+                    <option value="finance question">Finance Question</option>
+                  </select>
+                </div>
+
+                <div class="field">
+                  <label for="contactMethod">Preferred Contact Method</label>
+                  <select id="contactMethod" name="contactMethod">
+                    <option value="phone">Phone</option>
+                    <option value="email">Email</option>
+                  </select>
+                </div>
+
+                <div class="field">
+                  <label for="bestDay">Best Day to Contact You</label>
+                  <select id="bestDay" name="bestDay">
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                    <option value="Saturday">Saturday</option>
+                  </select>
+                </div>
+
+                <div class="field field--span">
+                  <label for="postcode">Postcode / Eircode</label>
+                  <input type="text" id="postcode" name="postcode" placeholder="e.g. BT1 1AA" />
+                </div>
+            </div>
+
+            <p class="small-note">Use this form if you are interested in one of the cars on the inventory page.</p>
+            <button type="submit">Submit</button>
+            <p id="formResult" class="result-box"></p>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span class="year"></span> Smith's Dealership. All rights reserved.</p>
+    </footer>
+</body>    
+</html>
+

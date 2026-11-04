@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Trade In</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="site-title">
+            <a href="home.html">
+                <img src="images/favicon.png" alt="Smith's Dealership logo" class="site-logo">
+            </a>
+            <h1><a href="home.html" class="site-home-link">Smith's Dealership</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="inventory.html">Inventory</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="finance.html">Finance</a></li>
+                <li><a href="trade-in.html">Trade In</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><button type="button" id="accessButton" class="nav-button" aria-expanded="false" aria-controls="accessPanel">Accessibility</button></li>
+            </ul>
+        </nav>
+        <div id="accessPanel">
+            <p>Accessibility Options</p>
+            <button type="button" id="contrastButton">High Contrast Mode</button>
+            <button type="button" id="changeFont">Accessible Font Size</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Trade in intro -->
+        <section class="page-box">
+            <h2>Trade In</h2>
+            <p>This page is for customers who want to trade in their current car.</p>
+        </section>
+
+        <!-- Current progress -->
+        <section class="page-box">
+            <h2>How It Will Work</h2>
+            <ul class="home-list">
+                <li>Bring your current car details</li>
+                <li>We check the condition and mileage</li>
+                <li>A trade in value can then be discussed</li>
+            </ul>
+        </section>
+
+        <!-- still being worked on -->
+        <section class="page-box">
+            <h2>Trade In Details</h2>
+            <div class="form-grid">
+                <div class="field">
+                    <label for="tradeMake">Car Make</label>
+                    <input type="text" id="tradeMake" name="tradeMake" placeholder="e.g. Ford">
+                </div>
+
+                <div class="field">
+                    <label for="tradeModel">Car Model</label>
+                    <input type="text" id="tradeModel" name="tradeModel" placeholder="e.g. Focus">
+                </div>
+
+                <div class="field">
+                    <label for="tradeYear">Year</label>
+                    <input type="number" id="tradeYear" name="tradeYear" placeholder="e.g. 2018">
+                </div>
+
+                <div class="field">
+                    <label for="tradeMileage">Mileage</label>
+                    <input type="number" id="tradeMileage" name="tradeMileage" placeholder="e.g. 50000">
+                </div>
+
+                <div class="field">
+                    <label for="tradeCondition">Condition</label>
+                    <select id="tradeCondition" name="tradeCondition">
+                        <option value="">Select condition</option>
+                        <option value="excellent">Excellent</option>
+                        <option value="good">Good</option>
+                        <option value="fair">Fair</option>
+                        <option value="poor">Poor</option>
+                    </select>
+                </div>
+            </div>
+            <button type="button" id="calculateTradeIn">Calculate Trade-In Value</button>
+            <div id="tradeInResult" class="result-message"></div>
+            <p><a href="contact.html">Contact us about a trade in</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span class="year"></span> Smith's Dealership. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+

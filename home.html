@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Dealership - Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+<body id="homePage">
+    <!-- Welcome popup -->
+    <div id="welcomePopup">
+        <div id="welcomeBox">
+            <h2>Welcome</h2>
+            <p>Welcome to the Dealership.</p>
+            <p>Use the options to view the inventory, request a test drive or contact us.</p>
+            <button type="button" id="closePopup">Close</button>
+        </div>
+    </div>
+
+    <header>
+        <div class="site-title">
+            <a href="home.html">
+                <img src="images/favicon.png" alt="Smith'sDealership logo" class="site-logo">
+            </a>
+            <h1><a href="home.html" class="site-home-link">Smith's Dealership</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="inventory.html">Inventory</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="finance.html">Finance</a></li>
+                <li><a href="trade-in.html">Trade In</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><button type="button" id="accessButton" class="nav-button" aria-expanded="false" aria-controls="accessPanel">Accessibility</button></li>
+            </ul>
+        </nav>
+        <div id="accessPanel">
+            <p>Accessibility Options</p>
+            <button type="button" id="contrastButton">High Contrast Mode</button>
+            <button type="button" id="changeFont">Accessible Font Size</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Intro section -->
+        <section class="page-box">
+            <h2>Welcome to the Car Dealership</h2>
+            <p>At the dealership, we are offering a wide range of reliable cars at competitive prices.</p>
+            <p>Use the navigation above to view the inventory, look at finance, check the trade in page or contact us.</p>
+            <p>
+                <a class="page-link-button" href="inventory.html">View Inventory</a>
+                <a class="page-link-button" href="enquiry.html">Book Test Drive</a>
+                <a class="page-link-button" href="finance.html">Finance Options</a>
+            </p>
+        </section>
+
+        <!-- Slideshow section -->
+        <section class="page-box">
+            <h2>The Dealership</h2>
+            <div class="slideshow-box">
+                <img src="images/dealership-hero-exterior.png" alt="Exterior view of the dealership" class="slide-image" id="slide1">
+                <img src="images/dealership-cars-lineup.png" alt="Used cars lined up at the dealership" class="slide-image" id="slide2">
+                <img src="images/dealership-featured-car.png" alt="Featured car at the dealership" class="slide-image" id="slide3">
+                <img src="images/uk-dealership-showroom-interior.png" alt="Inside the dealership showroom" class="slide-image" id="slide4">
+                <img src="images/dealership-customer-experience.png" alt="Customer speaking with dealership staff" class="slide-image" id="slide5">
+            </div>
+            <p id="slideText" class="info-box">See some of the cars we currently have available.</p>
+        </section>
+
+        <!-- Home page content -->
+        <section class="page-box">
+            <h2>Why Choose here</h2>
+            <ul class="home-list">
+                <li>Good value cars</li>
+                <li>Friendly customer service</li>
+                <li>Easy test drive booking</li>
+                <li>Finance and trade in</li>
+            </ul>
+        </section>
+
+        <section class="page-box">
+            <h2>More Services</h2>
+            <p>dealership pages so customers can find finance and trade in information easier.</p>
+            <p>
+                <a class="page-link-button" href="finance.html">Finance</a>
+                <a class="page-link-button" href="trade-in.html">Trade In</a>
+                <a class="page-link-button" href="about-us.html">About Us</a>
+            </p>
+        </section>
+
+        <section class="page-box">
+            <h2>Featured Car</h2>
+            <img src="images/camry.png" alt="2018 Toyota Camry XLE">
+            <p><strong>2018 Toyota Camry</strong></p>
+            <p>Price: &pound;15,000</p>
+            <p>Mileage: 30,000 miles</p>
+            <button type="button" id="featuredButton">Show featured car details</button>
+            <p id="featuredText" class="info-box">This is one of the featured cars because it has low mileage, good condition and is suitable for everyday driving.</p>
+            <p><a href="enquiry.html">Request a test drive for this car</a></p>
+        </section>
+
+        <section class="page-box">
+            <h2>Opening Hours</h2>
+            <p>Monday to Friday: 9:00 AM - 5:00 PM</p>
+            <p>Saturday: 10:00 AM - 3:00 PM</p>
+            <p>Sunday: Closed</p>
+        </section>
+
+        <section class="page-box">
+            <h2>What Our Customers Say</h2>
+            <blockquote>"Great experience" - Jane D.</blockquote>
+            <blockquote>"Friendly staff." - John S.</blockquote>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span class="year"></span> Smith's Dealership. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+

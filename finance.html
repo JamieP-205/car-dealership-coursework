@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Finance</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    
+</head>
+<body>
+    <header>
+        <div class="site-title">
+            <a href="home.html">
+                <img src="images/favicon.png" alt="Smith's Dealership logo" class="site-logo">
+            </a>
+            <h1><a href="home.html" class="site-home-link">Smith's Dealership</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="inventory.html">Inventory</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="finance.html">Finance</a></li>
+                <li><a href="trade-in.html">Trade In</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><button type="button" id="accessButton" class="nav-button" aria-expanded="false" aria-controls="accessPanel">Accessibility</button></li>
+            </ul>
+        </nav>
+        <div id="accessPanel">
+            <p>Accessibility Options</p>
+            <button type="button" id="contrastButton">High Contrast Mode</button>
+            <button type="button" id="changeFont">Accessible Font Size</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Finance intro -->
+        <section class="page-box">
+            <h2>Finance</h2>
+            <p>Get an estimated monthly payment on the car your interested in.</p>
+            <p class="small-note">This is only an estimate not a final finance offer.</p>
+        </section>
+
+        <!-- Finance calculator -->
+        <section class="page-box">
+            <h2>Finance Estimate</h2>
+            <form id="financeForm">
+                <div class="form-grid">
+                    <div class="field">
+                        <label for="financePrice">Car Price</label>
+                        <input type="number" id="financePrice" name="financePrice" value="15000" min="1" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="financeDeposit">Deposit</label>
+                        <input type="number" id="financeDeposit" name="financeDeposit" value="2000" min="0" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="financeMonths">Number of Months</label>
+                        <select id="financeMonths" name="financeMonths">
+                            <option value="24">24</option>
+                            <option value="36" selected>36</option>
+                            <option value="48">48</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit">Calculate</button>
+                <p id="financeResult" class="result-box"></p>
+            </form>
+        </section>
+
+        <!-- Finance info -->
+        <section class="page-box">
+            <h2>What You May Need</h2>
+            <ul class="home-list">
+                <li>Proof of address</li>
+                <li>Photo identification</li>
+                <li>Details of the car you are interested in</li>
+            </ul>
+            <p><a href="enquiry.html">Go to the test drive and car enquiry form</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span class="year"></span> Smith's Dealership. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+

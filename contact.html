@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <title>Contact Us</title>
+   
+  </head>
+  <body>
+    <header>
+      <div class="site-title">
+        <a href="home.html">
+          <img src="images/favicon.png" alt="Smith's Dealership logo" class="site-logo">
+        </a>
+        <h1><a href="home.html" class="site-home-link">Smith's Dealership</a></h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="inventory.html">Inventory</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+          <li><a href="finance.html">Finance</a></li>
+          <li><a href="trade-in.html">Trade In</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><button type="button" id="accessButton" class="nav-button" aria-expanded="false" aria-controls="accessPanel">Accessibility</button></li>
+        </ul>
+      </nav>
+      <div id="accessPanel">
+            <p>Accessibility Options</p>
+            <button type="button" id="contrastButton">High Contrast Mode</button>
+            <button type="button" id="changeFont">Accessible Font Size</button>
+        </div>
+    </header>
+
+    <main>
+      <!-- Contact details -->
+      <section class="page-box">
+        <h2>Contact Us</h2>
+        <p>Below is the main dealership contact information. You can reach out to us with general questions.</p>
+        <p><strong>Address:</strong> 123 Main Avenue, Belfast</p>
+        <p><strong>Phone:</strong> 028 5313 9983</p>
+        <p><strong>Email:</strong> michael@smithdealership.com</p>
+        <p><strong>Business Hours:</strong> Monday to Friday, 9:00 AM - 5:00 PM</p>
+        <p class="small-note">For test drives and car interest use the Test Drive and Car Enquiry page.</p>
+      </section>
+
+      <!-- Contact form -->
+      <section class="page-box">
+        <h2>General Contact Form</h2>
+        <form id="contactForm">
+          <div class="field">
+            <label for="name">Full name:</label>
+            <input type="text" id="name" name="name" required minlength="5" maxlength="50">
+          </div>
+          <div class="field">
+            <label for="subject">Subject:</label>
+            <select id="subject" name="subject">
+              <option value="general question">General Question</option>
+              <option value="complaint">Complaint</option>
+              <option value="opening hours">Opening Hours</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="email">Email address:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="field">
+            <label for="message">Your message:</label>
+            <input type="text" id="message" name="message" required minlength="10" maxlength="150">
+          </div>
+          <p class="small-note">This form is for general dealership contact rather than asking about a specific car.</p>
+          <button type="submit">Submit</button>
+        </form>
+        <p id="contactResult" class="result-box"></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span class="year"></span> Smith's Dealership. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
+

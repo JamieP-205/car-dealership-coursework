@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <title>Inventory</title>
+   
+</head>    
+<body>
+    <header>
+        <div class="site-title">
+            <a href="home.html">
+                <img src="images/favicon.png" alt="Smith's Dealership logo" class="site-logo">
+            </a>
+            <h1><a href="home.html" class="site-home-link">Smith's Dealership</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="inventory.html">Inventory</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="finance.html">Finance</a></li>
+                <li><a href="trade-in.html">Trade In</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><button type="button" id="accessButton" class="nav-button" aria-expanded="false" aria-controls="accessPanel">Accessibility</button></li>
+            </ul>
+        </nav>
+      <div id="accessPanel">
+            <p>Accessibility Options</p>
+            <button type="button" id="contrastButton">High Contrast Mode</button>
+            <button type="button" id="changeFont">Accessible Font Size</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Car filter section -->
+        <section class="page-box">
+            <h2>Inventory</h2>
+            <p>Below is some basic information on the cars in stock. Use the buttons to filter the cars or open more details for each one.</p>
+            <button type="button" id="allCarsButton">Show all cars</button>
+            <button type="button" id="cheapCarsButton">Show cars under &pound;15,000</button>
+            <p id="filterText" class="info-box">Showing all cars.</p>
+        </section>
+
+        <!-- Toyota -->
+        <div class="car-box" id="camryBox">
+            <img src="images/camry.png" alt="2018 Toyota Camry XLE">
+            <p><strong>2018 Toyota Camry</strong></p>
+            <p>Price: &pound;15,000</p>
+            <p>Available now</p>
+            <button type="button" id="car1button">Show more</button>
+            <p id="car1info" class="info-box">Mileage: 30,000 miles. Fuel: Petrol. Colour: Silver.</p>
+            <p><a href="enquiry.html">Request a test drive</a></p>
+        </div>
+
+        <!-- Ford -->
+        <div class="car-box" id="focusBox">
+            <img src="images/focus.png" alt="2019 Ford Focus">
+            <p><strong>2019 Ford Focus</strong></p>
+            <p>Price: &pound;12,500</p>
+            <p>Available now</p>
+            <button type="button" id="car2button">Show more</button>
+            <p id="car2info" class="info-box">Mileage: 42,000 miles. Fuel: Diesel. Colour: Black.</p>
+            <p><a href="enquiry.html">Request a test drive</a></p>
+        </div>
+
+        <!-- Volkswagen -->
+        <div class="car-box" id="golfBox">
+            <img src="images/golf.png" alt="2020 Volkswagen Golf">
+            <p><strong>2020 Volkswagen Golf</strong></p>
+            <p>Price: &pound;17,250</p>
+            <p>Available now</p>
+            <button type="button" id="car3button">Show more</button>
+            <p id="car3info" class="info-box">Mileage: 21,000 miles. Fuel: Petrol. Colour: White.</p>
+            <p><a href="enquiry.html">Request a test drive</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span class="year"></span> Smith's Dealership. All rights reserved.</p>
+    </footer>
+</body>    
+</html>
+
