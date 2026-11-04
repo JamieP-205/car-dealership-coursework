@@ -1,5 +1,7 @@
 ﻿# Car dealership website — group coursework
 
+[Portfolio case study](https://jamieparr.dev/projects/car-dealership-coursework/)
+
 First-year COM109 Client Side Development coursework at Ulster University, 2025/26.
 
 This repository contains the group's website. My allocated pages were Finance and About Us; the complete site is included so navigation, styles and shared scripts work together.
