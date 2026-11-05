@@ -1,6 +1,6 @@
-﻿# Car dealership website — group coursework
+# Car dealership website — group coursework
 
-[Portfolio case study](https://jamieparr.dev/projects/car-dealership-coursework/)
+**[Try the website in your browser](https://jamiep-205.github.io/car-dealership-coursework/finance.html)** (opens the Finance page) · [Portfolio case study](https://jamieparr.dev/projects/car-dealership-coursework/)
 
 First-year COM109 Client Side Development coursework at Ulster University, 2025/26.
 
@@ -17,6 +17,8 @@ This repository contains the group's website. My allocated pages were Finance an
 The shared stylesheet, scripts and other pages were group work. I do not claim sole authorship of the complete website.
 
 ## Run locally
+
+The site is published with GitHub Pages from this repository. To run it yourself:
 
 Open home.html in a browser, then select Finance or About Us.
 
